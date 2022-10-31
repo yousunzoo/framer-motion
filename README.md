@@ -60,3 +60,8 @@
 `useTransform(변환할 MotionValue, input, output)`
 
 - input과 output은 배열 형태로 범위 지정.
+- useScroll : 뷰포트가 스크롤될 때 업데이트되는 MotionValues를 리턴한다.
+- scrollX : 실제 수평 스크롤 픽셀
+- scrollY : 실제 수직 스크롤 픽셀
+- scrollXProgress : 0 ~ 1 사이의 수평 스크롤
+- scrollYProgress : 0 ~ 1 사이의 수직 스크롤
