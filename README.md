@@ -65,3 +65,13 @@
 - scrollY : 실제 수직 스크롤 픽셀
 - scrollXProgress : 0 ~ 1 사이의 수평 스크롤
 - scrollYProgress : 0 ~ 1 사이의 수직 스크롤
+
+## path
+
+- line drawing : svg 요소에 'pathLength', 'pathSpacing', 'pathOffset' 속성을 사용하여 Line drawing 애니메이션을 만들 수 있다.
+
+- path : path svg 요소는 모양을 정의하는 일반 요소이다. path의 속성 d는 경로의 모양을 정의한다.
+
+- motion.path 컴포넌트는 pathLength, pathSpacing, pathOffset을 가지고 있다. 수동 경로 측정 필요 없이 모두 0과 1 사이의 값으로 설정된다.
+
+- transition object에는 default와 각 애니메이션 별 속성을 지정할 수 있다. default는 기본적으로 모든 속성에 적용되고, fill 속성만 다르게 설정하고 싶으면 transition={fill : {duration : 2}} 형식으로 애니메이션에 있는 속성을 꺼내와 따로 작성할 수 있다.
