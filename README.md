@@ -43,3 +43,13 @@
   // ref 이용 : `<Wrapper ref={constraintsRef}><motion.div drag dragConstraints={constraintsRef}></Wrapper>`
 - dragSnapToOrigin : 드래그를 놓을 떄, 원점으로 다시 애니메이션됨
 - dragElastic : 외부 제약 조건에서 허용되는 이동 정도. 0 = 움직임 없음, 1 = 전체 움직임. 기본적으로 0.5로 설정됨
+
+## motionValues
+
+: 애니메이션 값의 상태(state)와 속도(velocity)를 추적한다.
+
+- motionValue는 React Rendering Cycle을 발동시키지 않는다.
+- useMotionValue(초기값)으로 사용가능
+- user가 드래그 할때 motionvalue가 자동으로 업데이트된다.
+- set 메서드로 업데이트할 수 있다.
+- get 메서드로 값을 읽을 수 있다.
