@@ -30,3 +30,16 @@
 - delayChildren : 딜레이 시간 후에 하위 애니메이션 시작
 - staggerChildren : 하위 컴포넌트의 애니메이션에 시간만큼 시차를 둘 수 있다.
 - inherit : 부모로부터 variant 변경 사항을 상속하지 않도록 하려면 false로 설정
+
+### gestures
+
+- hover : 포인터가 컴포넌트 위로 이동하거나 컴포넌트를 떠날 때를 감지
+- whileHover : 호버 제스처가 인식되는 동안 애니메이션 할 속성 또는 변형 레이블
+- Tap : 컴포넌트를 누르고 있는 동안 애니메이션 할 속성
+- Drag : 요소에 대해 끌기 활성화. 특정 방향으로만 드래그하려면 "x" 또는 "y" 설정 `<motion.div drag />`
+- whileDrag : 드래그 제스처가 인식되는 동안 애니메이션 할 속성 또는 레이블
+- dragConstraints : 허용된 드래그 가능 영역에 제약 조건을 적용함
+  // 픽셀 이용 : `<motion.div drag="x" dragConstraints={{left:0, right:300}} />`
+  // ref 이용 : `<Wrapper ref={constraintsRef}><motion.div drag dragConstraints={constraintsRef}></Wrapper>`
+- dragSnapToOrigin : 드래그를 놓을 떄, 원점으로 다시 애니메이션됨
+- dragElastic : 외부 제약 조건에서 허용되는 이동 정도. 0 = 움직임 없음, 1 = 전체 움직임. 기본적으로 0.5로 설정됨
