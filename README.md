@@ -13,3 +13,13 @@
   - delay, mass, repeat, damping, bounce ..
   - 물리적인 값을 조정할 수 있다.
 - initial props를 통해 초기값을 설정할 수 있다.
+
+## variants
+
+: 코드를 더 깔끔하게 해주고 많은 애니메이션을 하나로 연결해준다.
+: 애니메이션 설정을 분리된 오브젝트로 옮긴다.
+: 기본적으로 애니메이션의 무대라고 생각.
+
+- 변수로 사용할 객체를 생성해서 start, end시 상태를 지정한다.
+- 변수, start, end 이름은 어떻게 하던지 상관없음.
+- 모션 컴포넌트 안에 variants={varname}을 작성하고 initial="start" animate="end"를 작성하면 TS가 알아서 객체 내에서 꺼내 쓴다. (객체 내 이름과 같아야 한다.)
