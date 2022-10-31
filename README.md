@@ -53,3 +53,10 @@
 - user가 드래그 할때 motionvalue가 자동으로 업데이트된다.
 - set 메서드로 업데이트할 수 있다.
 - get 메서드로 값을 읽을 수 있다.
+
+## useTransform
+
+: 한 값 범위에서 다른 값 범위로 매핑하여 다른 MotionValue의 output을 변환하는 MotionValue를 만든다.
+`useTransform(변환할 MotionValue, input, output)`
+
+- input과 output은 배열 형태로 범위 지정.
