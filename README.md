@@ -23,3 +23,10 @@
 - 변수로 사용할 객체를 생성해서 start, end시 상태를 지정한다.
 - 변수, start, end 이름은 어떻게 하던지 상관없음.
 - 모션 컴포넌트 안에 variants={varname}을 작성하고 initial="start" animate="end"를 작성하면 TS가 알아서 객체 내에서 꺼내 쓴다. (객체 내 이름과 같아야 한다.)
+- 부모 컴포넌트에 variations가 있을 때, 자식 컴포넌트에게 variations와 initial, animate를 자동으로 전달한다.
+
+### Orchestration
+
+- delayChildren : 딜레이 시간 후에 하위 애니메이션 시작
+- staggerChildren : 하위 컴포넌트의 애니메이션에 시간만큼 시차를 둘 수 있다.
+- inherit : 부모로부터 variant 변경 사항을 상속하지 않도록 하려면 false로 설정
