@@ -83,3 +83,9 @@
 - 안쪽에 나타나거나 사라지는 컴포넌트를 감지해 animate 처리해준다.
 - exit : 컴포넌트가 트리에서 제거될 때 애니메이션할 대상
   `<AnimatePresence>{isVisible ? <Box initial={} animate={} exit={} /> : null}</AnimatePresence>`
+
+- animatePresence의 단일 자식 key를 변경하여 슬라이드쇼와 같은 컴포넌트를 쉽게 만들 수 있다.
+- custom : variants에 데이터를 보낼 수 있게 해주는 property
+- custom은 적용할 component 뿐만 아니라 부모인 animatePresence 안에도 넣어야 한다.
+- animatePresence에는 exitBeforeEnter property를 추가할 수 있다. : 이전 컴포넌트의 exit가 완전하게 실행되었을 때에만 이후 컴포넌트가 불러와짐.
+- exitBeforeEnter => mode="wait"로 대체됨.
