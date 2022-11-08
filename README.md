@@ -89,3 +89,13 @@
 - custom은 적용할 component 뿐만 아니라 부모인 animatePresence 안에도 넣어야 한다.
 - animatePresence에는 exitBeforeEnter property를 추가할 수 있다. : 이전 컴포넌트의 exit가 완전하게 실행되었을 때에만 이후 컴포넌트가 불러와짐.
 - exitBeforeEnter => mode="wait"로 대체됨.
+
+## layout
+
+- state에 의해 css, style이 바뀔 때 변화되는 자식 요소에 layout property를 추가하면 해당 element를 애니메이션하도록 함. 모든 변화를 animate 가능
+
+## Animate between components
+
+- AnimateSharedLayout은 동일한 layoutId prop을 가진 모션 컴포넌트들 간에 애니메이션을 적용할 수 있다.
+- layoutId가 있는 새 컴포넌트가 추가되고 다른 컴포넌트가 제거되면 이전 컴포넌트에서 새 컴포넌트로 레이아웃 애니메이션을 수행한다.
+- layoutId : 같은 컴포넌트에 같은 id를 부여한다면 framer가 둘을 연결해주고 animation을 만든다.
