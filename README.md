@@ -75,3 +75,11 @@
 - motion.path 컴포넌트는 pathLength, pathSpacing, pathOffset을 가지고 있다. 수동 경로 측정 필요 없이 모두 0과 1 사이의 값으로 설정된다.
 
 - transition object에는 default와 각 애니메이션 별 속성을 지정할 수 있다. default는 기본적으로 모든 속성에 적용되고, fill 속성만 다르게 설정하고 싶으면 transition={fill : {duration : 2}} 형식으로 애니메이션에 있는 속성을 꺼내와 따로 작성할 수 있다.
+
+## AnimatePresence
+
+- React js App에서 사라지는 component를 animate한다.
+- 적용할 컴포넌트에 <AnimatePresence>로 감싸준다.
+- 안쪽에 나타나거나 사라지는 컴포넌트를 감지해 animate 처리해준다.
+- exit : 컴포넌트가 트리에서 제거될 때 애니메이션할 대상
+  `<AnimatePresence>{isVisible ? <Box initial={} animate={} exit={} /> : null}</AnimatePresence>`
